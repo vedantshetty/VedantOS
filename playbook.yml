@@ -1,0 +1,16 @@
+---
+- hosts: all
+
+  tasks:
+    - name: Update repository cache and install necessary packages
+      apt:
+        pkg:
+        - nasm
+        - make
+        - build-essential
+        - grub
+        - qemu
+        - zip
+        update_cache: yes
+      become: yes
+
