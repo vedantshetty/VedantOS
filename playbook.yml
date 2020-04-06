@@ -6,11 +6,10 @@
       apt:
         pkg:
         - nasm
-        - make
         - build-essential
-        - grub
-        - qemu
-        - zip
+        - genisoimage
+        - bochs
+        - bochs-sdl
         update_cache: yes
       become: yes
 
